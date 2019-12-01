@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<h1><%=header1%></h1>
+
+<form action="/listProducts" method="post" class="form-group">
+  <button type="submit" name="button" class="btn btn-lg btn-primary listButton">List Products</button>
+</form>
+
+<form action="/newProduct" method="get" class="form-group">
+  <button type="submit" name="button" class="btn btn-lg btn-primary listButton">Add New Product</button>
+</form>
+
+
+<% include partials/footer %>

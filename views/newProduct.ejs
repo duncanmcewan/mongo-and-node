@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<h1><%=header1%></h1>
+
+
+<form class="form-group" action="/newProduct" method="post">
+  <label for="prodId">Product ID</label>
+  <input type="text" class="form-control" name="productId">
+  <label for="prodName" class="mt-20">Product name</label>
+  <input type="text" class="form-control" name="productName">
+  <label for="prodPrice" class="mt-20">Product price</label>
+  <input type="text" class="form-control" name="productPrice">
+  <label for="prodStock" class="mt-20">Product stock quantity</label>
+  <input type="text" class="form-control mb-4" name="productStock">
+  <button type="submit" name="button" class="btn btn-primary mt-20">Save Product</button>
+</form>
+
+
+<% include partials/footer %>

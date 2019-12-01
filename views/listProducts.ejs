@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<h1><%=header1%></h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"><h3>ID</h3></div>
+    <div class="col-sm-4"><h3>Name</h3></div>
+    <div class="col-sm-2"><h3>Price</h3></div>
+  </div>
+<% curProducts.forEach(function(entry) { %>
+  <%var convPrice = Number(entry.price).toFixed(2);%>
+  <div class="row">
+    <div class="col-sm-2"><h4><%=entry._id%></h4></div>
+    <div class="col-sm-4"><h4><%=entry.name%></h4></div>
+    <div class="col-sm-2"><h4><%=convPrice%></h4></div>
+  </div>
+<% }); %>
+</div>
+
+<% include partials/footer %>
